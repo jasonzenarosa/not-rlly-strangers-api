@@ -7,7 +7,7 @@ def random_card(deck):
     return {"card": random.choice(deck)}
 
 @app.route("/")
-def l1():
+def index():
     return "Welcome to the Not Rlly Strangers API!"
 
 @app.route("/level1")
