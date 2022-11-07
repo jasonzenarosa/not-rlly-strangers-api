@@ -19,4 +19,4 @@ def l3():
     return random_card(data.levelThree)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000)
+    app.run(threaded=True, port=8000)
