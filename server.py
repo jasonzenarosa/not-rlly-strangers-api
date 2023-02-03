@@ -35,7 +35,7 @@ def l2():
     if request.method == "OPTIONS": # CORS preflight
         return _build_cors_preflight_response()
     elif request.method == "GET": # The actual request following the preflight
-        return random_card(data.levelOne)
+        return random_card(data.levelTwo)
     else:
         raise RuntimeError("Weird - don't know how to handle method {}".format(request.method))
 
@@ -44,7 +44,7 @@ def l3():
     if request.method == "OPTIONS": # CORS preflight
         return _build_cors_preflight_response()
     elif request.method == "GET": # The actual request following the preflight
-        return random_card(data.levelOne)
+        return random_card(data.levelThree)
     else:
         raise RuntimeError("Weird - don't know how to handle method {}".format(request.method))
 
